@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+    <script>
+        let h1Element = document.createElement('h1');
+        h1Element.innerHTML = 'A heading';
+
+        let toElement = document.createElement('p');
+        toElement.innerHTML = 'A paragraph';
+
+        let fragment = document.createDocumentFragment();
+        fragment.appendChild(h1Element);
+        fragment.appendChild(toElement);
+
+        let mainElement = document.getElementById('main');
+        mainElement.appendChild(fragment);
+    </script>
+</body>
+</html>
