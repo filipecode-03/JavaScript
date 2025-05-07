@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <label>Number 1</label> 
+        <input type="text" id="number1" value="0">
+        <br>
+        <label>Number 2</label> 
+        <input type="text" id="number2" value="0">
+        <br>
+        <label>Result:</label> 
+        <input type="text" id="result" value="0">
+        <br>
+        <button id="submit">Submit</button>
+</div>
+    <script>
+        $('#submit').click(() => {
+            let number1 = parseInt($('#number1').val());
+            let number2 = parseInt($('#number2').val());
+            let result = number1 + number2;
+            $('#result').val(result);
+        })
+    </script>
+</body>
+</html>
