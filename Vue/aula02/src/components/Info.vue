@@ -8,6 +8,7 @@
             <li>React</li>
             <li>Angular</li>
         </ul>
+        <p>Para acessar meu portfólio <a v-bind:href="meu_link" target="_blank">Clique aqui</a></p>
     </div>
 </template>
 
@@ -17,7 +18,8 @@
         name: 'Info',
         data() {
             return {
-                esta_trabalhando: true
+                esta_trabalhando: true,
+                meu_link: 'https://google.com'
             }
         }
     }
